@@ -1,0 +1,2 @@
+# ChessBeast
+Chess Coaching Platform
