@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ChessBeast — Chess Coaching with Ben "The Beast" [Your Name]</title>
+<meta name="description" content="Aggressive, calculated chess coaching. Join ChessBeast — private lessons, group classes, and a community built for players who want to attack.">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>♞</text></svg>">
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="top">
+  <div class="nav__inner">
+    <a href="#top" class="nav__logo">Chess<span>Beast</span></a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#method">Method</a>
+      <a href="#coaching">Coaching</a>
+      <a href="#coach">The Coach</a>
+      <a href="#community">Community</a>
+      <a href="#contact" class="nav__cta">Book a session</a>
+    </nav>
+    <button class="nav__burger" id="navBurger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero__board" aria-hidden="true"></div>
+  <svg class="hero__tour" id="knightTour" viewBox="0 0 400 400" aria-hidden="true">
+    <path id="tourPath" fill="none" stroke="var(--gold)" stroke-width="1.4" opacity="0.55"/>
+    <circle id="tourDot" r="4.5" fill="var(--gold)"/>
+  </svg>
+
+  <div class="hero__content">
+    <p class="eyebrow">1. e4 — chess coaching that attacks first</p>
+    <h1 class="hero__title">Play like a<br><span>Beast.</span></h1>
+    <p class="hero__sub">Private coaching and a growing community for players who are done playing scared. Sharp openings, ruthless calculation, and endgames that finish the job.</p>
+    <div class="hero__actions">
+      <a href="#contact" class="btn btn--gold">Book a session</a>
+      <a href="#community" class="btn btn--ghost">Join the community</a>
+    </div>
+    <div class="hero__stats">
+      <div><strong>500+</strong><span>students coached</span></div>
+      <div><strong>2400+</strong><span>peak FIDE rating</span></div>
+      <div><strong>FM</strong><span>title holder</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT / METHOD ===== -->
+<section class="section section--ivory" id="method">
+  <div class="section__inner">
+    <p class="eyebrow eyebrow--dark">The Beast Method</p>
+    <h2 class="section__title">Four moves to a dangerous player</h2>
+    <p class="section__lede">Every game has a structure. So does the way I teach. Each stage below maps to a real phase of the Ruy Lopez — because good chess, like good coaching, follows an order.</p>
+
+    <div class="steps">
+      <div class="step">
+        <span class="step__move">1.e4</span>
+        <h3>Foundations</h3>
+        <p>Openings you actually understand, not memorize. We build repertoires around ideas — pawn structures, piece activity, and the plans behind the first ten moves.</p>
+      </div>
+      <div class="step">
+        <span class="step__move">1...e5</span>
+        <h3>Calculation</h3>
+        <p>Daily tactics, forcing-move training, and candidate-move discipline. This is where most players plateau — and where most rating points are won.</p>
+      </div>
+      <div class="step">
+        <span class="step__move">2.Nf3</span>
+        <h3>Attack</h3>
+        <p>Initiative, sacrifice, and pressure. You'll learn to recognize when a position calls for aggression — and how to calculate it cleanly instead of guessing.</p>
+      </div>
+      <div class="step">
+        <span class="step__move">2...Nc6</span>
+        <h3>Conversion</h3>
+        <p>Endgame technique so a winning position stays winning. Rook endings, opposite-color bishops, and the technical conversions that separate 1400s from 2000s.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== COACHING PROGRAMS ===== -->
+<section class="section section--dark" id="coaching">
+  <div class="section__inner">
+    <p class="eyebrow">Coaching</p>
+    <h2 class="section__title section__title--light">Pick your training</h2>
+    <p class="section__lede section__lede--light">All coaching is 1:1 over video call with a shared board, recorded for review, with homework between sessions.</p>
+
+    <div class="cards">
+      <article class="card">
+        <h3>Single Session</h3>
+        <p class="card__price">$60 <span>/ 60 min</span></p>
+        <ul>
+          <li>Game analysis or opening prep</li>
+          <li>Personalized homework set</li>
+          <li>Written session notes</li>
+          <li>No commitment</li>
+        </ul>
+        <a href="#contact" class="btn btn--outline">Book this</a>
+      </article>
+
+      <article class="card card--featured">
+        <span class="card__tag">Most popular</span>
+        <h3>Monthly Program</h3>
+        <p class="card__price">$200 <span>/ month</span></p>
+        <ul>
+          <li>4 sessions per month</li>
+          <li>Custom opening repertoire</li>
+          <li>Weekly tactics assignments</li>
+          <li>Direct messaging between sessions</li>
+        </ul>
+        <a href="#contact" class="btn btn--gold">Start training</a>
+      </article>
+
+      <article class="card">
+        <h3>Tournament Prep</h3>
+        <p class="card__price">$350 <span>/ package</span></p>
+        <ul>
+          <li>Opponent-specific preparation</li>
+          <li>3 intensive sessions</li>
+          <li>Post-round debriefs</li>
+          <li>On-call during your event</li>
+        </ul>
+        <a href="#contact" class="btn btn--outline">Get ready</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== THE COACH ===== -->
+<section class="section section--ivory" id="coach">
+  <div class="section__inner section__inner--split">
+    <div class="coach__photo" aria-hidden="true">
+      <div class="coach__photo-frame">
+        <span>Add your photo<br><small>images/coach.jpg</small></span>
+      </div>
+    </div>
+    <div class="coach__bio">
+      <p class="eyebrow eyebrow--dark">The Coach</p>
+      <h2 class="section__title">Hi, I'm [Your Name].</h2>
+      <p>I've spent the last [X] years playing competitive chess and the last [X] years teaching it. I hold the [FM / CM / NM / your title] title, with a peak rating of [your rating]. I've coached players from complete beginners to competitors at [tournament/level].</p>
+      <p>My approach isn't about memorizing engine lines — it's about building the calculation habits and pattern recognition that let you find good moves on your own, under a clock, under pressure.</p>
+      <ul class="coach__facts">
+        <li><strong>Title:</strong> [FM / your title]</li>
+        <li><strong>Peak rating:</strong> [2400]</li>
+        <li><strong>Coaching since:</strong> [year]</li>
+        <li><strong>Languages:</strong> [English, ...]</li>
+      </ul>
+      <a href="#contact" class="btn btn--gold">Work with me</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="section section--dark">
+  <div class="section__inner">
+    <p class="eyebrow">Results</p>
+    <h2 class="section__title section__title--light">What students say</h2>
+    <div class="quotes">
+      <blockquote>
+        <p>"I gained 300 rating points in four months. The tactics training alone was worth it."</p>
+        <cite>— Student name, 1650 → 1950</cite>
+      </blockquote>
+      <blockquote>
+        <p>"Finally understand why I was making moves, not just what to play. That changed everything."</p>
+        <cite>— Student name, Club player</cite>
+      </blockquote>
+      <blockquote>
+        <p>"Prep for my last tournament was scary good — my opponent played straight into it."</p>
+        <cite>— Student name, Tournament competitor</cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ===== COMMUNITY ===== -->
+<section class="section section--ivory" id="community">
+  <div class="section__inner section__inner--center">
+    <p class="eyebrow eyebrow--dark">The Community</p>
+    <h2 class="section__title">Join ChessBeast</h2>
+    <p class="section__lede">A community for players who want to get better together — daily puzzles, game reviews, tournaments, and a place to talk chess with people who take it as seriously as you do.</p>
+    <div class="community__grid">
+      <div class="community__item">
+        <h3>Daily Puzzles</h3>
+        <p>A fresh tactical puzzle every day, with discussion in the group.</p>
+      </div>
+      <div class="community__item">
+        <h3>Member Tournaments</h3>
+        <p>Regular internal tournaments and ladders, all skill levels welcome.</p>
+      </div>
+      <div class="community__item">
+        <h3>Game Reviews</h3>
+        <p>Post your games and get feedback from the coach and fellow members.</p>
+      </div>
+    </div>
+    <a href="#" class="btn btn--gold">Join the Discord</a>
+    <p class="community__note">Replace this link with your Discord / community invite URL.</p>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="section section--dark" id="contact">
+  <div class="section__inner section__inner--center">
+    <p class="eyebrow">Get in touch</p>
+    <h2 class="section__title section__title--light">Ready to attack?</h2>
+    <p class="section__lede section__lede--light">Tell me a bit about your level and goals, and I'll reply within a day or two.</p>
+
+    <form class="form" id="contactForm">
+      <div class="form__row">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form__row">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form__row">
+        <label for="rating">Current rating (if any)</label>
+        <input type="text" id="rating" name="rating" placeholder="e.g. Chess.com 1200, or 'new player'">
+      </div>
+      <div class="form__row">
+        <label for="message">What do you want to work on?</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn--gold">Send message</button>
+      <p class="form__note" id="formNote">This form doesn't send anywhere yet — see the README for how to connect it (Formspree, mailto, etc).</p>
+    </form>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer__inner">
+    <a href="#top" class="nav__logo">Chess<span>Beast</span></a>
+    <p>&copy; <span id="year"></span> ChessBeast. All rights reserved.</p>
+    <div class="footer__links">
+      <a href="#coaching">Coaching</a>
+      <a href="#community">Community</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
